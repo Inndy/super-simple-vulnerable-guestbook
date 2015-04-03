@@ -6,7 +6,8 @@
         $navs = [
             [ 'Home', '/'],
             [ 'New Post', '/?mod=new' ],
-            [ 'Hack', '/?mod=hack' ]
+            [ 'Hack', '/?mod=hack' ],
+            [ 'Hash', '/?mod=hash' ],
         ];
         foreach ($navs as $item)
             echo "<li><a href=\"{$item[1]}\">{$item[0]}</a></li>";

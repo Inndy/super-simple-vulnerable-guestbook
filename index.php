@@ -26,6 +26,8 @@
         case 'post': require(APP_ROOT . 'mods/post.php'); break;
         // something interesting
         case 'hack': require(APP_ROOT . 'templates/hack.php'); break;
+        // password hash
+        case 'hash': require(APP_ROOT . 'mods/hash.php'); break;
         // home page
         default: require(APP_ROOT . 'mods/home.php');
     }
