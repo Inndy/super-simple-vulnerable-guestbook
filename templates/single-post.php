@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css" media="all">
 </head>
 <body>
-    <?php require('header.php'); ?>
+    <?php require(APP_ROOT . '/templates/header.php'); ?>
     <section class="main">
         <?php /* XSS Vulnerable */ ?>
         <h2>Post -- <?php echo $post['title']; ?></h2>

@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="style.css" media="all">
 </head>
 <body>
-    <?php require('header.php'); ?>
+    <?php require(APP_ROOT . '/templates/header.php'); ?>
     <section class="main">
         <h2>Sorry, nothing here.</h2>
         <ul>
