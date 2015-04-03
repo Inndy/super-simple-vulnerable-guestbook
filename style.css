@@ -1,0 +1,29 @@
+body {
+  font-family: sans-serif;
+}
+
+ul.nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.nav > li {
+  display: inline-block;
+  padding: 2px 4px;
+}
+
+ul.nav > li:not(:last-child):after {
+  display: inline-block;
+  padding-left: 4px;
+  content: "|";
+}
+
+.sourcecode {
+  border: 1px solid #333;
+  padding: 4px;
+}
+
+td > input, td > textarea {
+  width: 100%;
+}
