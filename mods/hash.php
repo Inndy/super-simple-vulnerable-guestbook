@@ -1,4 +1,8 @@
 <?php if(!isset($conn)) die;
+    /*
+     * Use `password_hash` and `password_verify`, they are secure!
+     */
+
     $pwd = $_POST['password'] ?: false;
     $hash = $_POST['hash'] ?: false;
 

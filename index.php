@@ -17,6 +17,8 @@
     }
 
     $mod = strtolower($_GET['mod'] ?: 'main');
+    // NEVER DO: require(APP_ROOT . 'mods/' . $mod);
+
     switch ($mod) {
         // read message
         case 'read': require(APP_ROOT . 'mods/read.php'); break;
