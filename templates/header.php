@@ -1,4 +1,4 @@
-<header>
+<?php if(!isset($conn)) die; ?><header>
     <h1>Super-Simple-Vunlerable-Guestbook</h1>
 
     <ul class="nav">

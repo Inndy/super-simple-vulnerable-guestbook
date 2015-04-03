@@ -1,4 +1,4 @@
-<?php
+<?php if(!isset($conn)) die;
     $sql = "INSERT INTO `posts` VALUES(NULL, '{$_POST['title']}', '{$_POST['content']}', NOW())";
     $result = $conn->query($sql) ? 'Success' : 'Failed';
 

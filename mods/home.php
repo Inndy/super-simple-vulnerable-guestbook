@@ -1,4 +1,4 @@
-<?php
+<?php if(!isset($conn)) die;
     $result = $conn->query('SELECT * FROM `posts`');
     if ($result->num_rows == 0) {
         require(APP_ROOT . 'templates/no-data.php');

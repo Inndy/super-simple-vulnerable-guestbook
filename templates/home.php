@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if(!isset($conn)) die; ?><!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">

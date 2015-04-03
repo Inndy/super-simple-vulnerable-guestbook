@@ -1,4 +1,4 @@
-<?php
+<?php if(!isset($conn)) die;
     if (isset($_GET['id'])) {
         // Injectable
         $result = $conn->query('SELECT * FROM `posts` WHERE `pid` = ' . $_GET['id']);
