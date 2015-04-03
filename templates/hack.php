@@ -12,6 +12,11 @@
             walk($name, $func);
         }, array_filter($list, is_dir));
     }
+
+    $dump = $_GET['dump'] ?: '';
+    if (preg_match('/^\w\+$/', $dump) === false) {
+        $dump = false;
+    }
 ?><!DOCTYPE html>
 <html>
 <head>
@@ -31,6 +36,14 @@
             });
         ?>
         </ul>
+        <?php
+            if ($dump) {
+                echo '<pre class="sourcecode">';
+                echo "-- Dump Of \${$dump} --\n";
+                var_dump($$dump);
+                echo '</pre>';
+            }
+        ?>
         <h3>But the source code...</h3>
         <pre class="sourcecode"><?php highlight_file($file); ?></pre>
     </section>
