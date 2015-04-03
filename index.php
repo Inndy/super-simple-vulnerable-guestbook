@@ -28,6 +28,8 @@
         case 'hack': require(APP_ROOT . 'templates/hack.php'); break;
         // password hash
         case 'hash': require(APP_ROOT . 'mods/hash.php'); break;
+        // delete post
+        case 'del': require(APP_ROOT . 'mods/del.php'); break;
         // home page
         default: require(APP_ROOT . 'mods/home.php');
     }

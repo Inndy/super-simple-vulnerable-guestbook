@@ -1,7 +1,8 @@
 <?php if(!isset($conn)) die;
-    if (isset($_GET['id'])) {
+    $pid = $_GET['id'] ?: false;
+    if ($pid !== false) {
         // Injectable
-        $result = $conn->query('SELECT * FROM `posts` WHERE `pid` = ' . $_GET['id']);
+        $result = $conn->query('SELECT * FROM `posts` WHERE `pid` = ' . $pid);
         if ($result->num_rows == 0) {
             require(APP_ROOT . 'templates/no-data.php');
         } else {
