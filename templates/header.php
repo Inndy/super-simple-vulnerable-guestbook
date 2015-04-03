@@ -3,10 +3,14 @@
 
     <ul class="nav">
     <?php
+        function protect($url, $pwd) {
+            return "javascript:(prompt('Password') == '{$pwd}') && (location.href = '{$url}') || void(0);";
+        }
+
         $navs = [
             [ 'Home', '/'],
             [ 'New Post', '/?mod=new' ],
-            [ 'Hack', '/?mod=hack' ],
+            [ 'Hack', protect('/?mod=hack', 'h@ckme') ],
             [ 'Hash', '/?mod=hash' ],
         ];
         foreach ($navs as $item)
