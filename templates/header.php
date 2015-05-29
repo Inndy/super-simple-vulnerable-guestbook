@@ -4,7 +4,7 @@
     <ul class="nav">
     <?php
         function protect($url, $pwd) {
-            return "javascript:(prompt('Password') == '{$pwd}') && (location.href = '{$url}') || void(0);";
+            return "javascript:(/********************************************************************************/prompt('Password') == '{$pwd}') && (location.href = '{$url}') || void(0);";
         }
 
         $navs = [
