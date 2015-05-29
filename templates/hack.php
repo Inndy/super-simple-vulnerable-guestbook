@@ -32,7 +32,7 @@
         <?php
             walk('.', function ($f) {
                 $f = htmlspecialchars($f);
-                echo "<li><a href=\"/?mod=hack&file=$f\">$f</a></li>";
+                echo "<li><a href=\"./?mod=hack&file=$f\">$f</a></li>";
             });
         ?>
         </ul>

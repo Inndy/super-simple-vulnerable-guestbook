@@ -10,7 +10,7 @@
     <section class="main">
         <ul>
             <?php while ($post = $result->fetch_assoc()): ?>
-            <li><a href="/?mod=read&id=<?php echo $post['pid'] ?>"><?php echo $post['title']?></a></li>
+            <li><a href="./?mod=read&id=<?php echo $post['pid'] ?>"><?php echo $post['title']?></a></li>
             <?php endwhile; ?>
         </ul>
     </section>

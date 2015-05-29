@@ -9,7 +9,7 @@
     <?php require(APP_ROOT . '/templates/header.php'); ?>
     <section class="main">
         <h1>Password Hash Utility</h1>
-        <form action="/?mod=hash" method="POST">
+        <form action="./?mod=hash" method="POST">
             <table>
                 <tbody>
                     <tr>

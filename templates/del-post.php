@@ -9,7 +9,7 @@
     <?php require(APP_ROOT . '/templates/header.php'); ?>
     <section class="main">
         <h1>Del post</h1>
-        <form action="/?mod=del" method="POST">
+        <form action="./?mod=del" method="POST">
             <table>
                 <tbody>
                     <tr>

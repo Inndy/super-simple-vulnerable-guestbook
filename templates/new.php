@@ -9,7 +9,7 @@
     <?php require(APP_ROOT . '/templates/header.php'); ?>
     <section class="main">
         <h1>New Post</h1>
-        <form action="/?mod=post" method="POST">
+        <form action="./?mod=post" method="POST">
             <table>
                 <tbody>
                     <tr>

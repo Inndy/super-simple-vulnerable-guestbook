@@ -8,10 +8,10 @@
         }
 
         $navs = [
-            [ 'Home', '/'],
-            [ 'New Post', '/?mod=new' ],
-            [ 'Hack', protect('/?mod=hack', 'h@ckme') ],
-            [ 'Hash', '/?mod=hash' ],
+            [ 'Home', './'],
+            [ 'New Post', './?mod=new' ],
+            [ 'Hack', protect('./?mod=hack', 'h@ckme') ],
+            [ 'Hash', './?mod=hash' ],
         ];
         foreach ($navs as $item)
             echo "<li><a href=\"{$item[1]}\">{$item[0]}</a></li>";

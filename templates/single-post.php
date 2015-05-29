@@ -8,7 +8,7 @@
 <body>
     <?php require(APP_ROOT . '/templates/header.php'); ?>
     <section class="main">
-        <a href="/?mod=del&pid=<?php echo $pid; ?>">Delete</a>
+        <a href="./?mod=del&pid=<?php echo $pid; ?>">Delete</a>
         <?php /* XSS Vulnerable */ ?>
         <h2>Post -- <?php echo $post['title']; ?></h2>
         <p><?php echo $post['content']; ?></p>
