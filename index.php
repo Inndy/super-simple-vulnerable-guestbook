@@ -33,5 +33,7 @@
         // delete post
         case 'del': require(APP_ROOT . 'mods/del.php'); break;
         // home page
-        default: require(APP_ROOT . 'mods/home.php');
+        case 'home': require(APP_ROOT . 'mods/home.php'); break;
+        // home page
+        default: header('Location: ' . $_SERVER['PHP_SELF'] . '?mod=home');
     }
